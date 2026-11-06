@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4F0E6">
+<title>生命の系統 図鑑</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/tree-page.css">
+<link rel="stylesheet" href="css/compare.css">
+<link rel="stylesheet" href="css/eukaryotes.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32"><path d="M16 29V17M16 17L8 9M16 17l8-8M8 9V3M8 9L3 6M24 9V3m0 6 5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </span>
+    <span class="brand-text">生命の系統 <em>図鑑</em></span>
+  </a>
+  <nav class="site-nav" aria-label="ページ">
+    <a href="#/" data-nav="top">全体像</a>
+    <a href="#/history" data-nav="history">分類の歴史</a>
+    <a href="#/atlas" data-nav="atlas">動物図鑑</a>
+    <a href="#/tree" data-nav="tree">系統樹</a>
+    <a href="#/compare" data-nav="compare">比べる</a>
+    <a href="#/eukaryotes" data-nav="eukaryotes">真核生物</a>
+    <a href="#/about" data-nav="about">出典</a>
+  </nav>
+  <div class="header-tools">
+    <button class="icon-btn" id="searchBtn" aria-label="検索">
+      <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="level-switch" role="group" aria-label="表示する内容の範囲">
+      <button data-level="basic" aria-pressed="true">基本</button>
+      <button data-level="adv" aria-pressed="false">発展も</button>
+    </div>
+  </div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-close" id="drawerClose" aria-label="閉じる">×</button>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="search" id="search" aria-hidden="true">
+  <div class="search-panel" role="dialog" aria-label="検索">
+    <div class="search-tabs">
+      <button class="on" data-tab="name">生物から探す</button>
+      <button data-tab="trait">特徴から探す</button>
+    </div>
+    <input id="searchInput" type="search" placeholder="例：ひとで、ミミズ、Euglena" autocomplete="off">
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</div>
+
+<!-- データ（表示ロジックと分離） -->
+<script src="data/sources.js"></script>
+<script src="data/organisms.js"></script>
+<script src="data/phyla.js"></script>
+<script src="data/phylogeny.js"></script>
+<script src="data/classification.js"></script>
+<script src="data/phyla_detail.js"></script>
+<script src="data/compare.js"></script>
+<script src="data/eukaryotes.js"></script>
+<!-- 解剖図 -->
+<script src="assets/anatomy/hitode.js"></script>
+<script src="assets/anatomy/mimizu.js"></script>
+<script src="assets/anatomy/kaichu.js"></script>
+<script src="assets/anatomy/namiuzumushi.js"></script>
+<script src="assets/anatomy/hidora.js"></script>
+<script src="assets/anatomy/madako.js"></script>
+<script src="assets/anatomy/kabutomushi.js"></script>
+<script src="assets/anatomy/namekujiuo.js"></script>
+<script src="assets/anatomy/kairoudoukutsu.js"></script>
+<!-- ロジック -->
+<script src="js/core.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/anatomy.js"></script>
+<script src="js/pages/top.js"></script>
+<script src="js/pages/history.js"></script>
+<script src="js/pages/atlas.js"></script>
+<script src="js/pages/phylum.js"></script>
+<script src="js/pages/tree.js"></script>
+<script src="js/pages/compare.js"></script>
+<script src="js/pages/eukaryotes.js"></script>
+<script src="js/pages/about.js"></script>
+<script src="js/pages/stub.js"></script>
+<script src="js/search.js"></script>
+<script>App.start();</script>
+</body>
+</html>
