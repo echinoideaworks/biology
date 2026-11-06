@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<title>マラリア原虫（Plasmodium spp.）の輪状体</title>
+<!-- ref: 赤血球（核なし、中央がくぼむ）の中に寄生した若い栄養体。染色すると青紫の細い輪と赤い核（クロマチン点）が指輪のように見える。 -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<circle cx="130" cy="140" r="62" fill="#EDC2B4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<circle cx="130" cy="140" r="27.900000000000002" fill="#F6DCD2" fill-opacity="0.9" stroke="none"/>
+<circle cx="130" cy="140" r="11" fill="none" stroke="#6D5A8E" stroke-width="3"/>
+<circle cx="138" cy="133" r="4.2" fill="#8B3F5E" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<circle cx="270" cy="130" r="58" fill="#EDC2B4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<circle cx="270" cy="130" r="26.1" fill="#F6DCD2" fill-opacity="0.9" stroke="none"/>
+<circle cx="200" cy="265" r="64" fill="#EDC2B4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<circle cx="200" cy="265" r="28.8" fill="#F6DCD2" fill-opacity="0.9" stroke="none"/>
+<circle cx="182" cy="255" r="11" fill="none" stroke="#6D5A8E" stroke-width="3"/>
+<circle cx="190" cy="248" r="4.2" fill="#8B3F5E" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<circle cx="220" cy="280" r="11" fill="none" stroke="#6D5A8E" stroke-width="3"/>
+<circle cx="228" cy="273" r="4.2" fill="#8B3F5E" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<circle cx="80" cy="290" r="52" fill="#EDC2B4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<circle cx="80" cy="290" r="23.400000000000002" fill="#F6DCD2" fill-opacity="0.9" stroke="none"/>
+<circle cx="320" cy="280" r="55" fill="#EDC2B4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<circle cx="320" cy="280" r="24.75" fill="#F6DCD2" fill-opacity="0.9" stroke="none"/>
+<circle cx="325" cy="272" r="11" fill="none" stroke="#6D5A8E" stroke-width="3"/>
+<circle cx="333" cy="265" r="4.2" fill="#8B3F5E" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+</g>
+</svg>

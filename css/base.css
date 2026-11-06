@@ -1,0 +1,205 @@
+/* ===== 生命の系統 図鑑 — 基本スタイル ===== */
+:root{
+  /* 紙・台 */
+  --paper:#F4F0E6;
+  --paper-2:#EBE5D7;
+  --paper-3:#E2DACA;
+  --table:#FBF8F0;          /* ライトテーブルの発光面 */
+  --table-glow:#FFFDF7;
+  --line:#D6CDBB;
+  --line-2:#C4B9A3;
+  /* 文字 */
+  --ink:#2E2B27;
+  --ink-2:#5A544B;
+  --ink-3:#8A8377;
+  /* 系統樹 */
+  --tree:#5E7F4F;
+  --tree-2:#8FA97C;
+  --tree-pale:#C9D6BC;
+  --accent:#A65F2E;         /* 選択・強調（赤錆色） */
+  --water:#4D8FA8;          /* 水管系などの流れ */
+  /* 状態 */
+  --st-basic:#5E7F4F;
+  --st-adv:#6B6A9A;
+  --st-debate:#B07A2A;
+  --st-check:#9A8F80;
+  /* 門の色（彩度控えめ） */
+  --c-porifera:#C2A04E;
+  --c-cnidaria:#5C97A3;
+  --c-platyhelminthes:#B4859B;
+  --c-nematoda:#A0946A;
+  --c-annelida:#B2644E;
+  --c-mollusca:#7C6D9E;
+  --c-arthropoda:#8B6A40;
+  --c-echinodermata:#CF8742;
+  --c-chordata:#4E7889;
+  --c-bacteria:#7E8F5A;
+  --c-archaea:#9C7A5E;
+  --c-eukarya:#5E7F4F;
+  /* 文字組 */
+  --f-serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  --f-sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP",system-ui,sans-serif;
+  --f-latin:"Iowan Old Style","Palatino","Georgia",serif;
+  --radius:6px;
+  --header-h:60px;
+  --ease:cubic-bezier(.22,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-sans);font-size:15.5px;line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:"palt";
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--f-serif);font-weight:600;line-height:1.4;margin:0;letter-spacing:.02em}
+.sci{font-family:var(--f-latin);font-style:italic;letter-spacing:.01em}
+.muted{color:var(--ink-3)}
+.small{font-size:.86em}
+
+/* ===== ヘッダー ===== */
+.site-header{
+  position:sticky;top:0;z-index:40;height:var(--header-h);
+  display:flex;align-items:center;gap:28px;padding:0 28px;
+  background:rgba(244,240,230,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
+.brand-mark{width:26px;height:26px;color:var(--tree)}
+.brand-mark svg{width:100%;height:100%}
+.brand-text{font-family:var(--f-serif);font-size:18px;font-weight:600;letter-spacing:.06em}
+.brand-text em{font-style:normal;color:var(--tree)}
+.site-nav{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.site-nav a{
+  text-decoration:none;font-size:14px;padding:6px 12px;border-radius:999px;color:var(--ink-2);white-space:nowrap;
+  transition:background .2s,color .2s;
+}
+.site-nav a:hover{background:var(--paper-2);color:var(--ink)}
+.site-nav a.on{background:var(--ink);color:var(--paper)}
+.header-tools{display:flex;align-items:center;gap:12px}
+.icon-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--table);cursor:pointer;display:grid;place-items:center}
+.icon-btn svg{width:18px;height:18px}
+.icon-btn:hover{border-color:var(--ink-3)}
+.level-switch{display:flex;border:1px solid var(--line-2);border-radius:999px;overflow:hidden;background:var(--table)}
+.level-switch button{border:0;background:transparent;padding:5px 12px;font-size:13px;cursor:pointer;color:var(--ink-2)}
+.level-switch button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.level-switch button[data-level="adv"][aria-pressed="true"]{background:var(--st-adv)}
+
+/* ===== バッジ ===== */
+.badge{
+  display:inline-flex;align-items:center;gap:4px;font-size:11.5px;line-height:1;font-family:var(--f-sans);
+  padding:4px 8px 4px 7px;border-radius:999px;border:1px solid currentColor;white-space:nowrap;vertical-align:middle;font-weight:500;
+}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.b-basic{color:var(--st-basic)}
+.b-adv{color:var(--st-adv)}
+.b-debate{color:var(--st-debate)}
+.b-debate::before{background:transparent;border:1.5px dashed currentColor;width:5px;height:5px}
+.b-check{color:var(--st-check)}
+.b-check::before{background:transparent;border:1.5px solid currentColor;width:4px;height:4px}
+
+/* 発展の表示切替 */
+body:not(.show-adv) .lv-adv{display:none !important}
+
+/* 出典リンク */
+.src{font-size:11px;color:var(--ink-3);text-decoration:none;border-bottom:1px dotted var(--ink-3);cursor:pointer;margin-left:4px;white-space:nowrap}
+.src:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ===== ライトテーブル（図版を置く台） ===== */
+.lighttable{
+  position:relative;border-radius:10px;
+  background:
+    radial-gradient(ellipse at 50% 42%, var(--table-glow) 0%, var(--table) 55%, #F3EEE2 100%);
+  box-shadow:inset 0 0 0 1px rgba(196,185,163,.55), 0 1px 0 rgba(255,255,255,.7), 0 18px 40px -28px rgba(70,55,30,.35);
+}
+.lighttable::after{ /* 台の縁の細い木枠 */
+  content:"";position:absolute;inset:0;border-radius:10px;pointer-events:none;
+  box-shadow:inset 0 -3px 0 rgba(160,135,95,.10);
+}
+
+/* ===== 標本ラベル ===== */
+.label{
+  background:#FFFDF8;border:1px solid var(--line-2);border-radius:4px;
+  padding:16px 18px;position:relative;
+  box-shadow:0 1px 0 rgba(255,255,255,.8), 0 8px 18px -14px rgba(60,45,20,.4);
+}
+.label::before{ /* 罫の二重線 */
+  content:"";position:absolute;inset:5px;border:1px solid var(--line);border-radius:2px;pointer-events:none;
+}
+.label dl{display:grid;grid-template-columns:4.2em 1fr;gap:4px 12px;margin:0;font-size:14px;position:relative}
+.label dt{color:var(--ink-3);font-size:12px;padding-top:3px;letter-spacing:.1em}
+.label dd{margin:0}
+.label-title{font-family:var(--f-serif);font-size:22px;margin:0 0 2px;position:relative}
+.label-sub{position:relative;margin-bottom:10px}
+
+/* ===== ドロワー ===== */
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:60;
+  background:var(--paper);border-left:1px solid var(--line-2);
+  transform:translateX(102%);transition:transform .45s var(--ease);
+  overflow-y:auto;box-shadow:-20px 0 40px -30px rgba(40,30,15,.5);
+}
+.drawer.open{transform:none}
+.drawer-close{position:sticky;top:10px;float:right;margin:10px 12px 0 0;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--table);cursor:pointer;font-size:20px;line-height:1;z-index:2}
+.drawer-body{padding:24px 28px 40px}
+.scrim{position:fixed;inset:0;z-index:55;background:rgba(46,43,39,.18);opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+
+.drawer .figure{aspect-ratio:1/1;display:grid;place-items:center;padding:22px;margin:4px 0 18px}
+.drawer .figure img{width:100%;height:100%;object-fit:contain}
+.drawer h2{font-size:24px}
+.drawer p{margin:.6em 0}
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.btn{
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;cursor:pointer;
+  border:1px solid var(--ink-2);background:transparent;border-radius:999px;padding:7px 14px;font-size:13.5px;
+  transition:background .2s,color .2s;
+}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* 図版が未制作のとき */
+.ph{
+  width:100%;height:100%;display:grid;place-items:center;text-align:center;
+  border:1px dashed var(--line-2);border-radius:8px;color:var(--ink-3);font-size:12px;padding:8px
+}
+
+/* ===== 検索 ===== */
+.search{position:fixed;inset:0;z-index:70;background:rgba(46,43,39,.25);display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+.search.open{display:flex}
+.search-panel{width:min(620px,92vw);background:var(--paper);border:1px solid var(--line-2);border-radius:12px;padding:16px;box-shadow:0 30px 60px -30px rgba(40,30,15,.6)}
+.search-tabs{display:flex;gap:6px;margin-bottom:10px}
+.search-tabs button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+.search-tabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#searchInput{width:100%;font:inherit;font-size:17px;padding:10px 14px;border:1px solid var(--line-2);border-radius:8px;background:var(--table);outline:none}
+#searchInput:focus{border-color:var(--ink-2)}
+.search-results{max-height:50vh;overflow:auto;margin-top:8px}
+.sr-item{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:8px;border-radius:8px;cursor:pointer;text-decoration:none}
+.sr-item:hover,.sr-item.on{background:var(--paper-2)}
+.sr-thumb{width:52px;height:52px;border-radius:6px;background:var(--table);display:grid;place-items:center;padding:4px}
+.sr-thumb img{width:100%;height:100%;object-fit:contain}
+.trait-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.chip{border:1px solid var(--line-2);background:var(--table);border-radius:999px;padding:4px 11px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--tree);color:#fff;border-color:var(--tree)}
+
+/* ===== 汎用 ===== */
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.eyebrow{font-size:12px;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase;font-family:var(--f-latin)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+@media (max-width:900px){
+  .site-header{gap:12px;padding:0 14px;backdrop-filter:none;background:var(--paper)}
+  .brand-text{font-size:16px}
+  .site-nav{position:fixed;left:0;right:0;bottom:0;background:rgba(244,240,230,.97);border-top:1px solid var(--line);padding:8px 10px;z-index:45}
+  .level-switch button{padding:5px 9px}
+  .wrap{padding:0 16px}
+  body{padding-bottom:56px}
+}
+@media (max-width:520px){
+  .brand-text em{display:none}
+}

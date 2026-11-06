@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<title>渦鞭毛藻 ツノモ類（Ceratium s.l.）</title>
+<!-- ref: 鎧板で覆われた細胞。前に1本、後ろに2本の長い角。体を一周する横溝と縦溝、溝にそって鞭毛2本（横溝の鞭毛は溝に沿う）。 -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M188,155 L196,25 L204,25 L212,155Z" fill="#EFE6D6" fill-opacity="0.9" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M160,240 L120,380 L130,382 L178,250Z" fill="#EFE6D6" fill-opacity="0.9" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M232,245 L285,370 L294,365 L248,232Z" fill="#EFE6D6" fill-opacity="0.9" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M200,150 C235,150 255,175 255,205 C255,235 235,255 200,258 C165,255 145,235 145,205 C145,175 165,150 200,150Z" fill="#EFE6D6" fill-opacity="0.9" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M165,170 L200,185 L235,170" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M150,225 L180,232" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M220,232 L252,222" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M200,185 L200,195" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M146,205 C175,215 225,215 254,205" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M146,212 C175,222 225,222 254,212" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M195,218 L192,252 M205,218 L208,252" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<ellipse cx="175" cy="185" rx="9" ry="5" fill="#C9A45A" fill-opacity="0.7" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="222" cy="190" rx="9" ry="5" fill="#C9A45A" fill-opacity="0.7" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="185" cy="240" rx="9" ry="5" fill="#C9A45A" fill-opacity="0.7" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="215" cy="238" rx="9" ry="5" fill="#C9A45A" fill-opacity="0.7" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="200" cy="200" rx="9" ry="5" fill="#C9A45A" fill-opacity="0.7" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<circle cx="150" cy="160" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="187" cy="213" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="224" cy="176" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="161" cy="229" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="198" cy="192" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="235" cy="245" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="172" cy="208" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="209" cy="171" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="246" cy="224" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="183" cy="187" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="220" cy="240" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="157" cy="203" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="194" cy="166" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="231" cy="219" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="168" cy="182" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="205" cy="235" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="242" cy="198" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="179" cy="161" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="216" cy="214" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="153" cy="177" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="190" cy="230" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="227" cy="193" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="164" cy="246" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="201" cy="209" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="238" cy="172" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="175" cy="225" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="212" cy="188" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="249" cy="241" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="186" cy="204" r="0.9" fill="#3a332b" opacity="0.35"/>
+<circle cx="223" cy="167" r="0.9" fill="#3a332b" opacity="0.35"/>
+<path d="M200.0,252.0 L200.3,253.2 L200.6,254.5 L200.8,255.7 L201.0,256.9 L201.3,258.2 L201.7,259.4 L202.3,260.5 L203.0,261.6 L203.8,262.7 L204.6,263.7 L205.3,264.8 L205.9,266.0 L206.3,267.2 L206.4,268.4 L206.3,269.8 L206.0,271.2 L205.6,272.6 L205.2,274.1 L205.0,275.5 L205.1,276.7 L205.6,277.9 L206.4,279.0 L207.6,279.9 L209.0,280.8 L210.5,281.6 L211.9,282.5 L213.1,283.5 L213.8,284.6 L214.1,285.8 L213.8,287.2 L213.0,288.8 L212.0,290.4 L210.9,292.1 L209.9,293.7 L209.3,295.2 L209.2,296.5 L209.8,297.7 L211.0,298.6 L212.8,299.4 L215.0,300.0" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+</g>
+</svg>

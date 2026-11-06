@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><title>ヒドラ（Hydra sp.）</title><!-- ref: OpenStax Biology 2e §28.2（ポリプ型、触手、出芽） -->
+<path d="M188,330 C184,280 182,220 186,160 C188,140 192,128 200,124 C208,128 212,140 214,160 C218,220 216,280 212,330 Z" fill="#D9C79A" stroke="#3a332b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205,160 C208,220 208,280 206,326" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45" stroke-linecap="round"/>
+<ellipse cx="200" cy="334" rx="20" ry="6" fill="#C9B07A" stroke="#3a332b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M192,128 Q200,114 208,128" fill="#E5D6AE" stroke="#3a332b" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200,126 Q138.0,96.0 96.1,66.0" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q138.0,96.0 96.1,66.0" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="159.1" cy="105.0" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="137.9" cy="93.0" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="118.3" cy="81.0" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="102.9" cy="70.8" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M200,126 Q175.0,65.4 130.0,4.8" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q175.0,65.4 130.0,4.8" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="180.1" cy="83.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="166.5" cy="59.3" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="151.2" cy="35.1" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="137.1" cy="14.5" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M200,126 Q184.8,66.2 189.5,6.5" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q184.8,66.2 189.5,6.5" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="191.8" cy="84.2" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="189.3" cy="60.3" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="188.4" cy="36.3" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="188.9" cy="16.0" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M200,126 Q228.1,58.4 236.2,-9.2" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q228.1,58.4 236.2,-9.2" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="217.2" cy="78.7" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="224.9" cy="51.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="230.9" cy="24.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="234.8" cy="1.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M200,126 Q224.4,76.9 268.8,27.7" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q224.4,76.9 268.8,27.7" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="219.5" cy="91.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="232.9" cy="71.9" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="247.9" cy="52.3" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="261.9" cy="35.6" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M200,126 Q271.8,93.1 323.6,60.3" fill="none" stroke="#3a332b" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M200,126 Q271.8,93.1 323.6,60.3" fill="none" stroke="#E5D6AE" stroke-width="2" stroke-linecap="round"/>
+<circle cx="247.8" cy="103.0" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="272.9" cy="89.9" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="296.5" cy="76.7" r="1.4" fill="#3a332b" opacity="0.6"/>
+<circle cx="315.2" cy="65.5" r="1.4" fill="#3a332b" opacity="0.6"/>
+<path d="M213,250 C232,244 246,236 252,222 C256,214 262,214 262,222 C262,236 248,252 213,262 Z" fill="#DCCB9F" stroke="#3a332b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258,218 L252.8,188.5" fill="none" stroke="#3a332b" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258,218 L273.0,192.0" fill="none" stroke="#3a332b" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258,218 L286.2,207.7" fill="none" stroke="#3a332b" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

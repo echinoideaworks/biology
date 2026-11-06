@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<title>灰色藻 キアノフォラ（Cyanophora paradoxa）</title>
+<!-- ref: 卵形の細胞から長さの異なる鞭毛2本。シアノバクテリアに似たペプチドグリカン壁を残す葉緑体（シアネレ）2つ、核。 -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M150,128 C110,90 80,80 40,60" fill="none" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M165,122 C180,70 220,50 250,20" fill="none" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M278.0,215.0 L277.3,228.7 L275.3,242.2 L272.1,255.2 L267.5,267.5 L261.9,278.9 L255.2,289.2 L247.5,298.3 L239.0,305.9 L229.8,312.0 L220.2,316.4 L210.2,319.1 L200.0,320.0 L189.8,319.1 L179.8,316.4 L170.2,312.0 L161.0,305.9 L152.5,298.3 L144.8,289.2 L138.1,278.9 L132.5,267.5 L127.9,255.2 L124.7,242.2 L122.7,228.7 L122.0,215.0 L122.7,201.3 L124.7,187.8 L127.9,174.8 L132.5,162.5 L138.1,151.1 L144.8,140.8 L152.5,131.7 L161.0,124.1 L170.2,118.0 L179.8,113.6 L189.8,110.9 L200.0,110.0 L210.2,110.9 L220.2,113.6 L229.8,118.0 L239.0,124.1 L247.5,131.7 L255.2,140.8 L261.9,151.1 L267.5,162.5 L272.1,174.8 L275.3,187.8 L277.3,201.3Z" fill="#E9EFE4" fill-opacity="0.85" stroke="#3a332b" stroke-width="2.2"/>
+<ellipse cx="170" cy="215" rx="30" ry="48" fill="#7FB5AE" fill-opacity="0.8" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M148,185 Q170,179 192,185" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M148,197 Q170,191 192,197" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M148,209 Q170,203 192,209" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M148,221 Q170,215 192,221" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M148,233 Q170,227 192,233" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M148,245 Q170,239 192,245" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="232" cy="225" rx="30" ry="48" fill="#7FB5AE" fill-opacity="0.8" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M210,195 Q232,189 254,195" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M210,207 Q232,201 254,207" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M210,219 Q232,213 254,219" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M210,231 Q232,225 254,231" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M210,243 Q232,237 254,243" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M210,255 Q232,249 254,255" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<circle cx="200" cy="160" r="15" fill="#E3D6C0" stroke="#3a332b" stroke-width="1.1"/>
+<circle cx="200" cy="160" r="5" fill="#B8A588" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M140,280 Q200,320 260,280" fill="none" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+</g>
+</svg>

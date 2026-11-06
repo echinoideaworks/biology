@@ -1,0 +1,68 @@
+/* ===== P06 真核生物のスーパーグループ図鑑 ===== */
+.eu-adopt{margin-top:10px;max-width:52em;line-height:1.7}
+.eu-top{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start;padding-bottom:24px}
+.eu-top>*{min-width:0}
+.eu-map{padding:10px;position:relative}
+.eu-map-svg{width:100%;height:auto;display:block;font-family:var(--f-sans)}
+.eu-br{fill:none;stroke:var(--tree-2);stroke-width:2.4;stroke-linecap:round;transition:stroke .3s,stroke-width .3s}
+.eu-br.dashed{stroke-dasharray:6 6}
+.eu-br.on{stroke:var(--accent);stroke-width:3.4}
+.eu-center{fill:var(--paper);stroke:var(--st-debate);stroke-width:2.2}
+.eu-center-t,.eu-amor-t{font-size:12px;fill:var(--ink-3)}
+.eu-amor{fill:var(--tree)}
+.eu-exc{fill:none;stroke:var(--ink-3);stroke-width:1.4;stroke-dasharray:4 5}
+.eu-exc-t{font-size:12px;fill:var(--ink-3)}
+.eu-node{cursor:pointer;outline:none}
+.eu-hit{fill:transparent}
+.eu-disc{fill:#FFFDF7;stroke:var(--gc);stroke-width:2.4;transition:stroke-width .2s}
+.eu-node.dashed .eu-disc{stroke-dasharray:5 4}
+.eu-node.on .eu-disc,.eu-node:focus-visible .eu-disc{stroke:var(--accent);stroke-width:4}
+.eu-node.pro .eu-disc{fill:#FBEBD2}
+.eu-name{font-size:14px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--table);stroke-width:4px}
+.eu-legend{list-style:none;margin:0;padding:4px 8px;display:flex;flex-wrap:wrap;gap:4px 14px;color:var(--ink-2)}
+.eu-legend li{display:flex;align-items:center;gap:6px}
+.eu-legend i{display:inline-block;width:26px;height:0;border-top:2.4px solid var(--tree-2)}
+.eu-legend .lg-dash{border-top-style:dashed}
+.eu-detail{display:flex;flex-direction:column;gap:14px}
+.eu-ghead h2{font-size:24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.eu-ghead p{margin:.4em 0;font-size:14.5px}
+.eu-scope{width:min(100%,340px);aspect-ratio:1/1;border-radius:50%;align-self:center;overflow:hidden;
+  box-shadow:inset 0 0 0 10px #EDE6D6, inset 0 0 0 11px var(--line-2), inset 0 0 40px rgba(120,100,60,.18)}
+.eu-scope-btn{width:100%;height:100%;border:0;background:none;padding:18%;cursor:pointer;display:block}
+.eu-scope-btn img{width:100%;height:100%;object-fit:contain;animation:settle .6s var(--ease)}
+.eu-strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px}
+.eu-strip button{flex:none;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:88px;min-height:44px;border:1px solid var(--line);background:transparent;border-radius:10px;padding:6px 8px;cursor:pointer;font-size:12.5px}
+.eu-strip button[aria-pressed="true"]{border-color:var(--ink-2);background:var(--table)}
+.eu-th{width:52px;height:52px;display:block}
+.eu-th img{width:100%;height:100%;object-fit:contain}
+.eu-th .ph,.eu-chip-fig .ph{font-size:9px;padding:2px}
+.eu-tools{padding-top:18px;padding-bottom:10px;border-top:1px solid var(--line)}
+.eu-switch{display:inline-flex;align-items:center;gap:10px;min-height:44px;cursor:pointer;font-weight:600}
+.eu-switch input{width:22px;height:22px;accent-color:var(--accent)}
+.eu-all{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-top:8px}
+.eu-chip{display:flex;align-items:center;gap:10px;text-align:left;min-height:56px;border:1px solid var(--line);border-left:4px solid var(--gc);background:rgba(255,253,248,.6);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13.5px;line-height:1.4;transition:background .3s,box-shadow .3s}
+.eu-chip.pro{background:#FBEBD2;box-shadow:0 0 0 2px #E8B76F}
+.eu-chip-fig{width:44px;height:44px;flex:none}
+.eu-chip-fig img{width:100%;height:100%;object-fit:contain}
+.eu-size{padding-top:30px;padding-bottom:100px}
+.eu-size h2{font-size:22px}
+#euRange{width:100%;max-width:640px;height:44px;accent-color:var(--tree)}
+.eu-size-names{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.eu-size-names button{min-height:40px;border:1px solid var(--line-2);background:var(--table);border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+.eu-size-names button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.eu-size-row{display:flex;align-items:flex-end;gap:18px;padding:20px;min-height:300px;overflow:hidden;flex-wrap:wrap}
+.eu-sz{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:70px}
+.eu-sz-c{border-radius:50%;background:#FFFDF7;border:1.5px solid var(--tree-2);display:grid;place-items:center;overflow:hidden;transition:width .6s var(--ease),height .6s var(--ease)}
+.eu-sz-c img{width:80%;height:80%;object-fit:contain}
+.eu-sz-c.big{border-style:dashed}
+.eu-sz.ref .eu-sz-c{border-color:var(--accent);border-width:2.5px}
+.eu-sz-l{font-size:12px;text-align:center;line-height:1.4;color:var(--ink-2)}
+@media (max-width:1023px){
+  .eu-top{grid-template-columns:1fr}
+  .eu-scope{width:min(78vw,320px)}
+}
+@media (max-width:600px){
+  .eu-name{font-size:17px}
+  .eu-size-row{gap:10px;padding:12px}
+  .eu-all{grid-template-columns:1fr 1fr}
+}

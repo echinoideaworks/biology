@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<title>ランブル鞭毛虫（Giardia intestinalis）の栄養体</title>
+<!-- ref: 洋なし形で左右対称。2つの核が並び顔のように見える。腹側前半に吸着円盤、鞭毛は4対（前側方・後側方・腹側・尾部）、中央に軸索と中央小体。 -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M160,150 C120,140 90,110 60,80" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M240,150 C280,140 310,110 340,80" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M175,240 C130,260 100,290 70,300" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M225,240 C270,260 300,290 330,300" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M190,280 C170,320 160,350 150,380" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M210,280 C230,320 240,350 250,380" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M195,336 C185,360 180,380 172,395" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M205,336 C215,360 220,380 228,395" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M200,70 C270,70 310,130 305,200 C300,260 250,300 210,330 L200,338 L190,330 C150,300 100,260 95,200 C90,130 130,70 200,70Z" fill="#EAE4D8" fill-opacity="0.88" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M130,170 C130,110 270,110 270,170 C270,215 130,215 130,170Z" fill="#DCD3C1" fill-opacity="0.7" stroke="#3a332b" stroke-width="1.1"/>
+<ellipse cx="172" cy="160" rx="18" ry="22" fill="#C9B79A" stroke="#3a332b" stroke-width="1.1"/><circle cx="172" cy="160" r="6" fill="#8C7656" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<ellipse cx="228" cy="160" rx="18" ry="22" fill="#C9B79A" stroke="#3a332b" stroke-width="1.1"/><circle cx="228" cy="160" r="6" fill="#8C7656" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+<path d="M196,190 L196,330 M204,190 L204,330" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M180,225 Q200,215 220,225" fill="none" stroke="#3a332b" stroke-width="2.2"/>
+</g>
+</svg>

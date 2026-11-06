@@ -1,0 +1,57 @@
+/* ===== P05 体のつくりを比べる ===== */
+.cmp-presets{display:flex;gap:8px;margin-top:16px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.cmp-chip{flex:none;min-height:44px;padding:6px 14px;font-size:14px}
+.cmp-custom{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;font-size:14px;color:var(--ink-2)}
+.cmp-custom select{font:inherit;min-height:44px;padding:6px 10px;border:1px solid var(--line-2);border-radius:8px;background:var(--table);color:var(--ink);margin-left:6px}
+.cmp-point{background:#FFFDF8;border:1px solid var(--line-2);border-left:4px solid var(--accent);border-radius:6px;padding:10px 14px;margin:8px 0 16px;font-size:14.5px}
+.cmp-figs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cmp-fig{margin:0;min-width:0}
+.cmp-fig figcaption{display:flex;align-items:center;gap:12px;margin-bottom:8px;border-top:4px solid var(--pc);padding-top:8px}
+.cmp-thumb{width:56px;height:56px;flex:none;display:block}
+.cmp-thumb img{width:100%;height:100%;object-fit:contain}
+.cmp-svgbox{position:relative;padding:18px 14px}
+.cmp-svgbox svg{width:100%;height:auto;display:block;max-height:46vh}
+.cmp-dorsal,.cmp-ventral{position:absolute;right:10px;font-size:11px;color:var(--ink-3)}
+.cmp-dorsal{top:6px}.cmp-ventral{bottom:6px}
+.cmp-note{font-size:13px;color:var(--ink-2);margin:6px 0 0}
+.cmp-svgbox svg [data-layer]{transition:opacity .35s,filter .35s}
+.cmp-figs[data-on] svg [data-layer]{opacity:.16;filter:grayscale(1)}
+.cmp-figs[data-on="body"] svg [data-layer="body"],
+.cmp-figs[data-on="coelom"] svg [data-layer="coelom"],
+.cmp-figs[data-on="gut"] svg [data-layer="gut"],
+.cmp-figs[data-on="nerve"] svg [data-layer="nerve"],
+.cmp-figs[data-on="support"] svg [data-layer="support"],
+.cmp-figs[data-on="special"] svg [data-layer="special"]{opacity:1;filter:none}
+.cmp-layers{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:16px 0}
+.cmp-layers .sheet{min-height:44px}
+.cmp-layers i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.ly-body{background:#C99A78}.ly-coelom{background:#F0E3C2;border:1px dashed #8A7F6E}.ly-gut{background:#D9B47E}.ly-nerve{background:#8C7AAE}.ly-support{background:#B8945E}.ly-special{background:#7FA6B5}
+.cmp-table{min-width:560px}
+.cmp-table tr[data-l]{cursor:pointer}
+.cmp-table tr.diff td{background:rgba(166,95,46,.08)}
+.cmp-table tr.diff th:first-child{color:var(--accent)}
+.cmp-table tr.on td,.cmp-table tr.on th{background:rgba(94,127,79,.16)}
+.cmp-table th:first-child{white-space:nowrap}
+.cmp-table td{min-height:44px}
+.tap-hint{font-size:10px;color:var(--ink-3)}
+.cmp-mrca{margin:24px 0 10px;padding:16px 18px;border:1px solid var(--line);border-radius:10px;background:rgba(255,253,248,.6)}
+.cmp-mrca h3{font-size:17px;margin-bottom:4px}
+.cmp-mrca .mrca-name{font-family:var(--f-serif);font-size:19px;color:var(--accent);margin:0 2px}
+.coel-view{margin:48px 0 100px;border-top:1px solid var(--line);padding-top:28px}
+.coel-view h2{font-size:22px}
+.coel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:14px 0}
+.coel-fig{margin:0}
+.coel-fig figcaption{font-size:14px;margin-top:8px}
+.only-coelom svg [data-layer]{opacity:.22;filter:grayscale(1)}
+.only-coelom svg [data-layer="coelom"],.only-coelom svg [data-layer="gut"]{opacity:1;filter:none}
+.only-coelom svg [data-layer="coelom"] *{stroke:var(--accent);stroke-width:2}
+
+@media (max-width:1023px){
+  .cmp-figs{grid-template-columns:1fr;gap:18px}
+  .cmp-svgbox svg{max-height:38vh}
+}
+@media (max-width:700px){
+  .coel-grid{grid-template-columns:1fr}
+  .cmp-layers{position:sticky;bottom:60px;background:rgba(244,240,230,.96);padding:8px 0;z-index:5;flex-wrap:nowrap;overflow-x:auto}
+  .cmp-layers .sheet{flex:none}
+}

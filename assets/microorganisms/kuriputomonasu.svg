@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<title>クリプトモナス（Cryptomonas sp.）</title>
+<!-- ref: やや扁平な楕円形の細胞。前端のくぼみ（溝）から長さのやや異なる鞭毛2本。褐色〜オリーブ色の葉緑体2つ、核は後方。 -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M158,118 C130,80 120,50 90,25" fill="none" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M165,112 C170,70 200,45 225,25" fill="none" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M150,110 C190,85 260,100 280,160 C300,230 270,320 205,330 C150,335 115,280 115,210 C115,170 125,135 150,110Z" fill="#EFE6D6" fill-opacity="0.88" stroke="#3a332b" stroke-width="2.2"/>
+<path d="M152,115 C165,140 168,170 160,200" fill="none" stroke="#3a332b" stroke-width="1.1"/><path d="M162,114 C176,140 178,170 170,198" fill="none" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M185,140 C230,130 260,175 255,230 C250,270 225,250 215,215 C205,180 180,170 185,140Z" fill="#A07A45" fill-opacity="0.7" stroke="#3a332b" stroke-width="1.1"/>
+<path d="M140,215 C140,260 160,310 205,315 C225,315 220,290 200,270 C175,245 160,215 140,215Z" fill="#A07A45" fill-opacity="0.7" stroke="#3a332b" stroke-width="1.1"/>
+<circle cx="215" cy="290" r="16" fill="#E3D6C0" stroke="#3a332b" stroke-width="1.1"/>
+<circle cx="190" cy="230" r="9" fill="#F3EBDB" stroke="#3a332b" stroke-width="0.7" opacity="0.45"/>
+</g>
+</svg>

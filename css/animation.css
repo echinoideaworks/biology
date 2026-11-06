@@ -1,0 +1,32 @@
+/* ===== アニメーション（すべて情報を伝える目的のもの） ===== */
+
+/* 系統樹：根から枝が伸びる → 先端に生物が現れる */
+.tree-radial.growing .link{stroke-dasharray:1 1;stroke-dashoffset:1}
+.tree-radial.growing .node,.tree-radial.growing .tip,.tree-radial.growing .rings{opacity:0}
+.tree-radial.growing.grown .link{stroke-dashoffset:0;transition:stroke-dashoffset .75s cubic-bezier(.4,.1,.3,1) var(--delay,0s)}
+.tree-radial.growing.grown .node{opacity:1;transition:opacity .4s ease var(--delay,0s)}
+.tree-radial.growing.grown .tip{opacity:1;transition:opacity .6s ease var(--delay,0s)}
+.tree-radial.growing.grown .tip image{animation:tipIn .8s var(--ease) both;animation-delay:var(--delay,0s)}
+.tree-radial.growing.grown .rings{opacity:1;transition:opacity 1s ease 2.4s}
+/* 伸び終わったら議論中の枝を点線に */
+.tree-radial.grown .link.debate{stroke-dasharray:.012 .012}
+@keyframes tipIn{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+
+/* 図鑑：節がスクロールで現れる */
+.sec{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.sec.in{opacity:1;transform:none}
+
+/* 図版の着地 */
+@keyframes settle{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* 水管系：液体の流れ */
+@keyframes flow{to{stroke-dashoffset:-24}}
+@keyframes pulse{0%,100%{transform:scale(1)}45%{transform:scale(.6)}}
+@keyframes footout{0%,100%{transform:scale(1)}50%{transform:scale(1.45)}}
+
+/* 動きを減らす設定 */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .sec{opacity:1;transform:none}
+}
